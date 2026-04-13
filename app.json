@@ -1,0 +1,44 @@
+{
+    "expo": {
+        "name": "vitta-mobile",
+        "slug": "vitta-mobile",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./src/assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./src/assets/splash-icon.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.vitta"
+        },
+        "android": {
+            "package": "com.vitta",
+            "googleServicesFile": "./google-services.json",
+            "adaptiveIcon": {
+                "backgroundColor": "#E6F4FE",
+                "foregroundImage": "./src/assets/android-icon-foreground.png",
+                "backgroundImage": "./src/assets/android-icon-background.png",
+                "monochromeImage": "./src/assets/android-icon-monochrome.png"
+            },
+            "usesCleartextTraffic": true,
+            "predictiveBackGestureEnabled": false
+        },
+        "web": {
+            "bundler": "metro",
+            "favicon": "./src/assets/favicon.png"
+        },
+        "plugins": [
+            "expo-secure-store",
+            "expo-local-authentication",
+            "@react-native-google-signin/google-signin",
+            "@react-native-firebase/app",
+            "@react-native-firebase/auth",
+            "expo-web-browser",
+            "@react-native-community/datetimepicker"
+        ]
+    }
+}

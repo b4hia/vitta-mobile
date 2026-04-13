@@ -1,0 +1,25 @@
+{
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "strict": true,
+        "typeRoots": ["./src/@types/*.d.ts", "node_modules/@types/*.d.ts"],
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "module": "ESNext",
+        "jsx": "react-jsx",
+
+        /* Bundler */
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+
+        /* Linting */
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true
+    }
+}
